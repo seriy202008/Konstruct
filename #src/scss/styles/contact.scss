@@ -1,0 +1,76 @@
+.contact {
+    &--content {
+        display: flex;
+        justify-content: space-between;
+        gap: 45px;
+        @include media-lg() {
+            gap: 15px;
+        }
+    }
+
+    &--body {
+        flex: 0 1 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &--addres {
+        color: #fff;
+        font-size: 11px;
+        line-height: 16px; /* 145.455% */
+        letter-spacing: 0.846px;
+    }
+
+    &--tel {
+        color: #fff !important;
+        font-size: 11px;
+        line-height: 16px; /* 145.455% */
+        letter-spacing: 0.846px;
+        &:link,
+        &:visited,
+        &:focus,
+        &:hover,
+        &:active {
+            color: #fff !important;
+        }
+    }
+
+    &--mail {
+        color: #fff !important;
+        font-size: 11px;
+        line-height: 16px; /* 145.455% */
+        letter-spacing: 0.846px;
+        &:link,
+        &:visited,
+        &:focus,
+        &:hover,
+        &:active {
+            color: #fff !important;
+        }
+    }
+
+    &--socials {
+        flex: 0 1 50%;
+        display: flex;
+        gap: 25px;
+        @include media-lg() {
+            flex-direction: column;
+            gap: 15px;
+        }
+        @include media-md() {
+            flex-direction: row;
+        }
+    }
+
+    &--icon {
+        width: 16px;
+    }
+
+    &--link {
+        width: 100%;
+        img {
+            width: 100%;
+        }
+    }
+}

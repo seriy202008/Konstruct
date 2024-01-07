@@ -1,0 +1,29 @@
+$ff-main: "Open Sans", Arial, Helvetica, sans-serif;
+$ff-title: BebasNeueBold, Arial, Helvetica, sans-serif;
+
+$col-main: #00a4e5;
+$col-sec: #16ace8;
+$col-text: #48555b;
+$col-bg1: #171819;
+$col-bg2: #141a20;
+
+$media-1: 940px;
+$media-2: 630px;
+$media-3: 480px;
+$media-4: 320px;
+
+@mixin media-lg() {
+    @media (max-width: $media-1) {
+        @content;
+    }
+}
+@mixin media-md() {
+    @media (max-width: $media-2) {
+        @content;
+    }
+}
+@mixin media-sm() {
+    @media (max-width: $media-3) {
+        @content;
+    }
+}

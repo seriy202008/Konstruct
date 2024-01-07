@@ -1,0 +1,18 @@
+.company {
+    &--content {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    &--logo {
+        width: 102px;
+    }
+
+    &--text {
+        color: #fff;
+        font-size: 11px;
+        line-height: 19px; /* 172.727% */
+        letter-spacing: 0.85px;
+    }
+}

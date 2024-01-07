@@ -1,0 +1,23 @@
+@import "_fonts";
+@import "_config";
+@import "_reset";
+// Блочная сетка
+@import "styles/wrapper";
+@import "styles/container";
+// Элементы(мини-блоки)
+@import "styles/bg";
+@import "styles/logo";
+@import "styles/nav";
+@import "styles/title";
+@import "styles/btn";
+// Секции(блоки)
+@import "styles/intro";
+@import "styles/header";
+@import "styles/story";
+@import "styles/capabs";
+@import "styles/work";
+@import "styles/signup";
+@import "styles/footer";
+@import "styles/company";
+@import "styles/links";
+@import "styles/contact";

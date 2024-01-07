@@ -1,0 +1,35 @@
+.nav {
+    @include media-sm() {
+        display: none;
+    }
+    &._active {
+        display: block;
+    }
+    &--list {
+        display: flex;
+        gap: 40px;
+        @include media-md() {
+            gap: 20px;
+        }
+    }
+    &--item {
+    }
+
+    &--link {
+        text-align: center;
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 1.091px;
+        text-transform: uppercase;
+        color: inherit;
+        transition: all 250ms;
+        &:link,
+        &:visited {
+            color: inherit;
+        }
+        &:hover,
+        &:active {
+            color: $col-main;
+        }
+    }
+}

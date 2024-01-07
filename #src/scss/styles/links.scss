@@ -1,0 +1,33 @@
+.links {
+    &--content {
+        display: flex;
+        @include media-lg() {
+            gap: 10px;
+        }
+    }
+
+    &--list {
+        flex: 0 1 33%;
+    }
+
+    &--item {
+    }
+
+    &--link {
+        color: #fff !important;
+        font-size: 11px;
+        font-weight: 600;
+        line-height: 25px; /* 227.273% */
+        letter-spacing: 0.846px;
+        transition: all 250ms;
+        &:link,
+        &:visited,
+        &:focus {
+            color: #fff !important;
+        }
+        &:hover,
+        &:active {
+            color: $col-main !important;
+        }
+    }
+}

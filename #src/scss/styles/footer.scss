@@ -1,0 +1,47 @@
+.footer {
+    &--container {
+        display: flex;
+        gap: 65px;
+        @include media-lg() {
+            gap: 20px;
+        }
+        @include media-md() {
+            flex-direction: column;
+            gap: 40px;
+        }
+    }
+
+    &--column {
+        flex: 0 1 33%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        @include media-md() {
+            flex: 0 1 auto;
+            gap: 10px;
+        }
+    }
+
+    &--name {
+        color: #fff;
+        font-size: 11px;
+        letter-spacing: 0.846px;
+    }
+
+    &--top {
+        background-color: $col-bg2;
+        padding: 40px 0 50px;
+    }
+
+    &--bottom {
+        background-color: $col-bg1;
+    }
+
+    &--copy {
+        color: #fff;
+        font-size: 11px;
+        letter-spacing: 0.846px;
+        text-align: center;
+        padding: 22px 0;
+    }
+}

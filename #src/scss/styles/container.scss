@@ -1,0 +1,13 @@
+.container {
+    margin: 0 auto;
+    max-width: $media-1;
+    @include media-lg() {
+        max-width: $media-2;
+    }
+    @include media-md() {
+        max-width: $media-3;
+    }
+    @include media-sm() {
+        max-width: $media-4;
+    }
+}
