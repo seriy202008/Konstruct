@@ -23,8 +23,8 @@
         }
     }
     &--burger {
+        display: none;
         background-color: #fff;
-        display: flex;
         flex-direction: column;
         gap: 3px;
         width: 30px;
@@ -41,6 +41,9 @@
             span {
                 background-color: $col-main;
             }
+        }
+        @include media-sm() {
+            display: flex;
         }
     }
 }
